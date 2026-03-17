@@ -1,0 +1,60 @@
+main p{
+    color: var(--text-color);
+    margin: 5px 0 15px 0;
+}
+.container{
+    border: 1px solid var(--button-color);
+    border-radius: 1em;
+    margin: 0 0 20px 0;
+    padding: min(1em, 5%);
+    h2, p, iframe{margin: 1rem;}
+    p.comment{color: gray;}
+}
+.container-box{
+    padding: 30px;
+}
+.tiesine-funkcija{
+    display: flex;
+    justify-content: space-between;
+}
+.tiesine-funkcija >  p{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.background-color-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 50px;
+    min-height: 25vh;
+    font-size: 1em;
+    background-image: radial-gradient( circle 708px at 0% 3.4%,  rgba(254,216,7,1) 14.5%, rgba(249,69,28,1) 71.8% );
+}
+.formule-1{
+    background: linear-gradient(90deg,rgb(102, 207, 255) 0%, rgb(195, 112, 255) 50%, rgb(255, 128, 242) 100%);
+    padding: 15px;
+    margin: 1em 0;
+    background-color: lightblue;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    height: 1px;
+    background-color: var(--button-color);
+    width: 100%;
+}
+@media(max-width: 800px){
+    main{
+        width: auto;
+    }
+    .container{
+        border: none;
+        padding: 0;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namai</title>
+    <link rel="stylesheet" href="../Css/sidebar.css">
+    <link rel="stylesheet" href="../Css/tiesine.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Funkcijos</span>
+                <button onclick="toggleSidebar()" id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+                </button>
+            </li>
+            <li class="active">
+                <a href="../../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-240v-80h62l105-120-105-120h-66l-64 344q-8 45-37 70.5T221-120q-45 0-73-24t-28-64q0-32 17-51.5t43-19.5q25 0 42.5 17t17.5 41q0 5-.5 9t-1.5 9q5-1 8.5-5.5T252-221l62-339H200v-80h129l21-114q7-38 37.5-62t72.5-24q44 0 72 26t28 65q0 30-17 49.5T500-680q-25 0-42.5-17T440-739q0-5 .5-9t1.5-9q-6 2-9 6t-5 12l-17 99h189v80h-32l52 59 52-59h-32v-80h200v80h-62L673-440l105 120h62v80H640v-80h32l-52-60-52 60h32v80H400Z"/></svg>
+                    <span>Funkcijos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="tiesines.html">Tiesines</a></li>
+                        <li><a href="atvirkštinio-proporcingumo.html">Atvirkštinio proporcingumo</a></li>
+                        <li><a href="laipsnis.html">Laipsninė</a></li>
+                        <li><a href="saknine.html">Šakninė</a></li>
+                        <li><a href="rodykline.html">Rodiklines</a></li>
+                        <li><a href="logoritminės.html">Logoritminės</a></li>
+                        <li><a href="trigonometrines.html">Trigonometrines</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="background-color-box">
+            <h1>Laipsninė funkcija</h1>
+            <p>Išsamiai išnagrynėkite funkcijų savybes</p>
+        </div>
+        <div class="container-box">
+            <div class="container">
+                <div class="tiesine-funkcija">
+                    <h2><span style="color: var(--dot);">&#8226;</span> Laipsninė funkcija</h2>
+                    <p>Laipsninė</p>
+                </div>
+                <p class="comment">Laipsninių funkcijų su skirtingais sveikaisiais neneigiamaisiais rodikliais tiesinė daugdara vadinama daugianariu.</p>
+                <div class="formule-1">
+                    <p>y=xa</p>
+                </div>
+                <div class="line"></div>
+                <div class="flex">
+                    <div class="box">
+                        <p class="comment">Kvadratinė funkcija</p>
+                        <p>y=x2 (Kvadratinė funkcija)</p>
+                    </div>
+                    <div class="box">
+                        <p class="comment">Kubinė funkcija</p>
+                        <p>y=x3 (Kubinė funkcija)</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h2>Pagrindinės savybės: </h2>
+                    <p>Apibrėžimo sritis (D(f)): Visos realiųjų skaičių aibės R (-infty < x < +infty)</p>
+                    <p>Reikšmių sritys (E(f)): Kai n yra lyginis: [0,+infty). Funkcija yra teigiama.</p>
+                    <p>Kai n yra nelyginis: (-infty, +infty)</p>
+                    <p>Grafiko ypatybės: Visos funkcijos eina per tašką (0, 0) ir (1, 1). Kuo didesnis laipsnio rodiklis, tuo staigesnis grafikas.</p>
+                    <p>Lyginumas: Lyginiai laipsniai (x2) -  lyginės funkcijos (simetriškos y ašiai).</p>
+                    <p>Nelyginiai laipsniai x3 - nelyginės funkcijos simetriškos koordinačių pradžios taškui (0,0).</p>
+                    <p>Didėjimas/Mažėjimas: x2 kai x>0 ir x3 (visoje srityje) yra didėjančios funkcijos.</p>
+                    <div class="line"></div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hHRPS74bHes?si=OFioFu6Y8sFeDxc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
